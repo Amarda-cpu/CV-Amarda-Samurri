@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Exercises</h1>
+
+    <!-- Exercise 1: DOM Manipulation -->
+    <section id="exercise1">
+        <h2>Exercise 1: DOM Manipulation</h2>
+        <ul id="itemList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <button id="addItem">Add Item</button>
+        <button id="removeItem">Remove Item</button>
+        <button id="highlightItems">Highlight Even Items</button>
+    </section>
+
+    <!-- Exercise 2: Event Handling -->
+    <section id="exercise2">
+        <h2>Exercise 2: Event Handling</h2>
+        <button id="alertButton">Show Alert</button>
+        <button id="changeBgButton">Change Background Color</button>
+        <button id="logTimeButton">Log Current Time</button>
+    </section>
+
+    <!-- Exercise 3: Loops and Arrays -->
+    <section id="exercise3">
+        <h2>Exercise 3: Loops and Arrays</h2>
+        <ul id="namesList"></ul>
+        <input type="text" id="newName" placeholder="Enter a name">
+        <button id="addName">Add Name</button>
+    </section>
+
+    <!-- Exercise 4: Functions and Conditions -->
+    <section id="exercise4">
+        <h2>Exercise 4: Functions and Conditions</h2>
+        <button id="greaterValueButton">Find Greater Value</button>
+        <button id="evenOddButton">Check Even/Odd</button>
+        <div id="result"></div>
+    </section>
+
+    <!-- Exercise 5: Updating the Page Title -->
+    <section id="exercise5">
+        <h2>Exercise 5: Updating the Page Title</h2>
+        <button id="newMessage">New Message</button>
+    </section>
+
+
+    <script>
+       document.getElementById("addItem").addEventListener('click', () => {
+        const itemList= document.getElementById('itemList');
+        var newEl= document.createElement("li");
+        newEl.textContent ="test";
+        itemList.appendChild(newEl)
+        
+     });
+     // heqim artikullin
+     document.getElementById("removeItem").addEventListener('click', () => {
+    const itemList = document.getElementById('itemList');
+    itemList.removeChild(itemList.lastElementChild);  // Heqim artikullin e fundit pa kushte
+}); 
+        
+
+        
+
+
+
+// Exercise 2: Event Handling
+const alertButton = document.getElementById("alertButton");
+const changeBgButton = document.getElementById("changeBgButton");
+const logTimeButton = document.getElementById("logTimeButton");
+
+// Show an alert
+alertButton.addEventListener("click", () => {
+    alert("butoni u klikua");
+});
+
+
+logTimeButton.addEventListener("click", () => {
+    console.log(`Current Time: ${new Date().toLocaleTimeString()}`);
+});
+
+
+        /* Exercise 3: Loops and Arrays
+        Takes an array of names (e.g., ["Alice", "Bob", "Charlie", "Diana"]).
+        Displays all names in a list format on the page using a loop.
+        Includes a button that, when clicked, appends a new name (entered by the user via a text input field) to the list.
+       */
+
+       
+const namesList = document.getElementById("namesList");
+const newName = document.getElementById("newName");
+const addName = document.getElementById("addName");
+
+// Add a name to the list
+addName.addEventListener("click", () => {
+    if (newName.value.trim() !== "") {
+        const nameItem = document.createElement("li");
+        nameItem.textContent = newName.value;
+        namesList.appendChild(nameItem);
+        newName.value = ""; // Clear the input field
+    } else {
+        alert("Vendosni emrin");
+    }
+});
+
+ /* Exercise 4: Functions and Conditions
+        Krijo një skript me funksionalitetin e mëposhtëm:
+        Një funksion që pranon dy argumente dhe kthen vlerën më të madhe.
+        Një funksion që kontrollon nëse një numër i caktuar është çift ose tek dhe shfaq rezultatin në faqe.
+        Testoni këto funksione duke i thirrur me sample inputs kur klikohet një buton.
+        */
+        
+const greaterValueButton = document.getElementById("greaterValueButton");
+const evenOddButton = document.getElementById("evenOddButton");
+const result = document.getElementById("result");
+
+// Find the greater value
+greaterValueButton.addEventListener("click", () => {
+    const value1 = parseInt(prompt("shkruaj numrin e pare"));
+    const value2 = parseInt(prompt("shkruaj numrin e dyte"));
+    if (!isNaN(value1) && !isNaN(value2)) {
+        result.textContent = `The greater value is: ${Math.max(value1, value2)}`;
+    } else {
+        result.textContent = "vendosni nje numer";
+    }
+});
+
+// Check if a number is even or odd
+evenOddButton.addEventListener("click", () => {
+    const value = parseInt(prompt("Vendos nje numer"));
+    if (!isNaN(value)) {
+        result.textContent = `The number ${value} is ${value % 2 === 0 ? "Even" : "Odd"}`;
+    } else {
+        result.textContent = "vendos nje numer";
+    }
+});
+
+        /* Exercise 5: Updating the Page Title
+        Updates the page's title in the browser tab to include the number of "unread messages" (simulated by a counter).
+        Increases the counter by 1 every time a button labeled "New Message" is clicked.
+        */
+const newMessage = document.getElementById("newMessage");
+
+newMessage.addEventListener("click", () => {
+    const message = prompt("Vendos nje Titull");
+    if (message) {
+        document.title = message;
+    }
+});
+
+     
+    </script>
+</body>
+</html>

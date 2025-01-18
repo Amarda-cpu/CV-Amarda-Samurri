@@ -1,0 +1,83 @@
+#first {
+background-color: rgb(25, 42, 87);
+}
+#fusha{
+background-color: rgb(141, 81, 12);
+margin-top: 200px;
+margin-left: 300px;
+margin-right: 300px;
+margin-bottom: 200px;
+
+}
+img{
+    border-radius: 200px;
+
+}
+table{
+    border: 2px;
+}
+#main{
+    display:grid;
+    grid-template-columns: 400px 1fr;
+    background-color:#FF7F50;
+    color: azure;
+
+}
+#div1{
+    padding-top: 100px;
+    background-color:#0A2342;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    
+     
+}
+#div2{
+    margin-top: 50px;
+    background-color:#EFE9E7;
+    color:#0A2342;
+    padding-left: 50px;
+}
+a:hover{
+
+   background-color: rgb(255, 255, 255);
+   color: rgb(40, 41, 43);
+   font-size: larger;
+}
+a:active{
+
+    background-color: rgb(130, 132, 123);
+    color: aliceblue;
+    font-size: larger;
+}
+a:visited{
+    color:	#E3BC9A
+}
+a:link{
+    color:darkgray
+}
+#submitBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4CAF50;  /* Green background */
+    color: white;               /* White text */
+    border: none;
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover */
+  }
+  
+  #submitBtn:hover {
+    background-color: #45a049;  /* Darker green on hover */
+    transform: scale(1.05);      /* Slight zoom effect */
+  }
+  
+  #submitBtn:active {
+    background-color: #3e8e41;  /* Even darker green when pressed */
+    transform: scale(0.98);      /* Slight shrink effect on click */
+  }
+  

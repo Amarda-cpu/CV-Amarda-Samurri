@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+      padding: 0;
+      height: 100%; /* Ensures the height is relative to the viewport */
+      overflow: auto; /* Ensures proper scrolling */
+      scroll-behavior: smooth;
+      background-color: #4e4c4e;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background:#0A2342;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  header  ul li {
+    margin: 0 15px;
+  }
+  header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  header ul li a:hover,
+  header ul li a.active {
+    color: #621507;
+  }
+  /* Main Content */
+  .intro {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom:15%;
+    margin-left:40%;
+    margin-right: 20%;
+
+  }
+  .intro .text {
+    flex: 1 1 50%;
+  }
+  .intro .text h1 {
+    font-size: 200%;
+    color: #350b0b;
+  }
+  .intro .text h2 {
+    font-size: 2rem;
+    color:#FFDAB9;
+  }
+  .intro .text span {
+    color: #FFDAB9;
+  }
+  .intro .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  .intro .social-links img {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+  .intro .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background:#350b0b;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  .intro .btn:hover {
+    background: #e5533c;
+  }
+  .intro .image {
+    flex: 1 1 40%;
+    padding: 20px;
+  }
+  .intro .image img {
+    max-width: 50%;
+    height: 50%;
+    border-radius: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #AboutMe{
+  background-color:#a99797;
+   width: 100%; 
+   height: 590px; 
+   margin-top:40px;
+  /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    color: aliceblue;
+  }
+  #AboutMe p{
+    border: 3px solid;
+    border-width: 20%;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5%;
+    
+
+  }
+  #project{
+    margin-top:3%;
+    width: 100%; 
+    height: 590px; 
+    background-color: #a99797; 
+ 
+
+  }
+  #blog{
+    background-color:#a99797;
+    width: 100%;
+    height: 590px;
+    margin-top:3%;
+    text-align:center;
+  }
+  #blog h2{
+    color:rgb(161, 85, 10);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 95%;
+  }
+  #blog h1{
+    color:black;
+    font-family:initial;
+  }
+  #blog p{
+    scroll-padding-bottom: 20%;
+    padding-top: 1%;
+  }
+  #contact{
+    width: 40%; 
+    height: 590px;
+    background-color: #a99797; 
+    margin: auto; 
+    margin-top:3%;
+    padding: 20px;
+    border-radius: 10px;
+   
+   
+  }
+  @media (min-width: 768px) {
+    #contact {
+      width: 40%; /* Wider on larger screens */
+    }
+  }
+
+  .projects-box {
+    display: flex; /* Për të shfaqur projektet anash njëri-tjetrit */
+    gap: 20px; /* Hapësira midis projekteve */
+    padding: 20px; /* Hapësira brenda kutisë së madhe */
+    border-radius: 8px; /* Këndet e rrumbullakosura */
+    /* Ngjyra e sfondit të kutisë */
+  }
+  
+  .project {
+    flex: 1; /* Projekti zgjat në mënyrë të barabartë */
+    padding: 15px; /* Hapësira brenda secilës kuti projekti */
+    border: 1px solid #ddd; /* Kufiri i secilës kuti projekti */
+    border-radius: 8px; /* Këndet e rrumbullakosura për secilin projekt */
+    background-color: #ce9ac9; /* Ngjyra e sfondit për secilin projekt */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hije për theksim */
+    text-align: center; /* Teksti në qendër */
+  }
+  
+  .project h3 {
+    margin-bottom: 10px; /* Hapësirë poshtë titullit */
+  }
+  
+  .project p {
+    font-size: 14px; /* Madhësia e tekstit të përshkrimit */
+    color: #555; /* Ngjyra e tekstit të përshkrimit */
+  }
+#project div{
+  padding-top: 20%;
+}
+  
