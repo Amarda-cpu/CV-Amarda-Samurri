@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitaes</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    // celesi publik i emailjs
+    (function () {
+      emailjs.init("f0npqlbOjoMluHpMA"); 
+    })();
+  </script>
+</head>
+<body>
+  <header>
+
+    <div class="container">
+      <h1 style="font-family:cursive">Amarda Samurri</h1>
+        <ul>
+          <li><a href="#home">Home</a></li> 
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#Experience"> Experience and Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+   
+
+  </header>
+
+    <div class="intro" id="home" style="width: 100%; height: 590px; margin: 0 auto;">
+      <div class="text">
+        <h2>Hi, It's Me</h2>
+        <h1>I'm <span>Amarda</span>
+        <br>A Computer Science Student</h1>
+        <div class="social-links">
+          <a href="https://m.facebook.com/amarda.samurri/" target="_blank"> <div class="imgfb"><img src="picture/facebookicon.png"></div></a>
+          <a href="https://www.instagram.com/amardasamurri/profilecard/?igsh=MW9qcnU2bXNiaDdqZQ==" target="_blank"><div class="imgin"><img src="picture/instagramicon.jpg"></div></a>
+          <a href="https://www.linkedin.com/in/amarda-samurri-b29069342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><div class="imglink"><img src="picture/LinkedInicon.png"></div></a>
+        </div>
+        <a download href="my CV.pdf" class="btn">Download CV</a>
+      </div>
+      <div class="image">
+        <img src="picture/Snapchat-408959108.jpg" alt="Profile Image" style="margin-top:30%;">
+      </div>
+    </div>
+
+    <section id="AboutMe">
+      <h1 style="text-align:center; padding-top: 10%;">About Me</h1>
+      <p><i>I am a second-year Computer 
+      Science bachelors student with a strong interest in technology and 
+      problem-solving. My background includes valuable experience sworking with
+      people, which have enhanced my communication and team work skills.
+      I am eager to apply my knowledge and collaborate on innovative projects that make a difference.</i></p>
+      </section>
+
+     <section id="project">
+
+       <div class="projects-box">
+        <a href="javascriptpractise/index.html" class="project" target="_blank">
+          <h3>Projekti 1</h3>
+          <p>Projekt Hyrje ne Java Script</p>
+        </a>
+
+        <a href="projekt gjermanisht.pdf" class="project" target="_blank">
+          <h3>Projekti 2</h3>
+          <p>Projekt i Gjuhes Gjermane</p>
+        </a>
+
+        <a href="projekt WEB/second.html" class="project" target="_blank">
+          <h3>Projekti 3</h3>
+          <p>CV.html by Amarda</p>
+        </a>
+        
+      </div>
+      
+      
+     </section>
+
+     <section id="blog" >
+         <h1 style="padding-top:10%;" ><strong>Blog</strong></h1>
+         <p><h2><b>A Girl in the World of Technology</b></h2>For many girls, the world of technology 
+          and computer science may seem like a distant field, one predominantly dominated by boys. However,
+           this stereotype is just one of those barriers that are being broken down more and more every day. 
+           In recent years, more girls have decided to enter this dynamic and innovative world,
+           becoming part of an extraordinary revolution that is changing everything around us.
+             <h2>Why Is It Important for Girls to Be Present in Technology?</h2>
+             Technology is an inseparable part of our daily lives. It touches every aspect of life, 
+             from how we communicate to how we work and learn. Therefore, it is crucial for girls
+              to be part of this development and to have the opportunity to contribute with their 
+              unique ideas and skills.
+             <h2>A Journey Full of Opportunities</h2>
+             For a girl passionate about technology, there are endless possibilities. From creating simple
+              applications to developing advanced systems, one can experiment, learn, and develop new skills every day.
+               She can be a programmer, a software engineer, a UI/UX designer, 
+             a technology project manager, or a cybersecurity expert. Every step is an opportunity for growth and 
+             development.
+            <h2>Challenges and Opportunities for Girls in Technology</h2>
+            Being a girl in technology can mean facing prejudices and stereotypes, 
+            but it can also be an opportunity to experiment, innovate, and help build a more open and equal world.              
+          </p>
+           </section>
+
+           <section id="Experience">
+            <h1>Experience and Education</h1>
+            <h4 style="padding-top: 2%;">Liria  private  School</h4>
+            <p>Height School <br>VKM 9.47</p>
+            <h4 style="padding-top: 2%;">Beder University Collage</h4>
+            <p>First Year Bachelor<br>CGPA 3.94</p>
+
+            <p>Volunteered at a student dormitory, resolving social issues and maintaining 
+              computer lab software and hardware.
+              Managed a check-in/check-out system to monitor teachers' attendance at school.
+              Gained leadership experience as a trainer at an intensive summer camp for 
+              third-grade children.
+              Developed technical and organizational skills through voluntary work.
+              </p>
+
+
+           </section>
+      
+
+
+           <section id="contact">
+            <form id="contactForm" style="padding-top: 20%; padding-bottom: 20%; text-align: center;">
+              <label for="name" style="color: #030302;">Name</label><br>
+              <input type="text" id="name" name="name" style="width: 60%; height: 40px; margin-bottom: 15px;" required><br>
+              
+              <label for="surname" style="color: #121211;">Surname</label><br>
+              <input type="text" id="surname" name="surname" style="width: 60%; height: 40px; margin-bottom: 15px;" required><br>
+              
+              <label for="email" style="color: #030303;">Email</label><br>
+              <input type="email" id="email" name="email" style="width: 60%; height: 40px; margin-bottom: 15px;" required><br>
+              
+              <label for="message" style="color: #0b0b0a;">Message</label><br>
+              <textarea id="message" name="message" style="width: 60%; height: 100px; margin-bottom: 15px;" required></textarea><br>
+              
+              <button type="submit" style="background-color: #F5F5DC; color: #333; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
+                Dërgo
+              </button>
+            </form>
+        
+            <script>
+              document.getElementById('contactForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+        
+                const name = document.getElementById('name').value;
+                const surname = document.getElementById('surname').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+        
+                // dergo email duke perdorur emailjs
+                emailjs
+                  .send("service_k11dw3g", "template_ekotnxk", {
+                    name: name,
+                    surname: surname,
+                    email: email,
+                    message: message,
+                  })
+                  .then(
+                    function (response) {
+                      alert('Emaili u dërgua me sukses!');
+                      console.log('Sukses!', response.status, response.text);
+                    },
+                    function (error) {
+                      alert('Dërgimi i emailit dështoi.');
+                      console.log('Dështim:', error);
+                    }
+                  );
+              });
+            </script>
+          </section>
+            
+          
+          
+ 
+</body>
+</html>

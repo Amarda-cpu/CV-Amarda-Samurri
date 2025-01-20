@@ -194,7 +194,7 @@ body {
     padding: 15px; /* Hapësira brenda secilës kuti projekti */
     border: 1px solid #ddd; /* Kufiri i secilës kuti projekti */
     border-radius: 8px; /* Këndet e rrumbullakosura për secilin projekt */
-    background-color: #ce9ac9; /* Ngjyra e sfondit për secilin projekt */
+    background-color: #686a6a; /* Ngjyra e sfondit për secilin projekt */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hije për theksim */
     text-align: center; /* Teksti në qender */
   }
@@ -210,14 +210,37 @@ body {
 #project div{
   padding-top: 20%;
 }
-#Experience{
-  border: 1px solid;
-  background-color:#a99797;
-  border-width: 20%;
-  padding-top: 12%;
-  padding-left: 30%;
-  padding-right: 30%;
-  padding-bottom: 5%;
-  margin-top:3%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+#Experience {
+  border: 2px solid #8c8c8c; 
+  background-color: #f4f4f4; 
+  border-radius: 15px; 
+  padding: 2rem; 
+  margin: 2rem auto; 
+  width: 60%; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
 }
+
+#Experience h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #333333; 
+  margin-bottom: 1rem;
+}
+
+#Experience h4 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #555555; 
+}
+
+#Experience p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6; 
+  color: #666666; 
+  margin-bottom: 1rem;
+}
+
+
