@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
-    // Initialize EmailJS with your public key
+    // celesi publik i emailjs
     (function () {
-      emailjs.init("f0npqlbOjoMluHpMA"); // Replace "YOUR_PUBLIC_KEY" with your actual public key
+      emailjs.init("f0npqlbOjoMluHpMA"); 
     })();
   </script>
 </head>
@@ -129,13 +129,12 @@
               document.getElementById('contactForm').addEventListener('submit', function (e) {
                 e.preventDefault();
         
-                // Retrieve form data
                 const name = document.getElementById('name').value;
                 const surname = document.getElementById('surname').value;
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
         
-                // Send email using EmailJS
+                // dergo email duke perdorur emailjs
                 emailjs
                   .send("service_k11dw3g", "template_ekotnxk", {
                     name: name,
