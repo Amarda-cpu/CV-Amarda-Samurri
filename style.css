@@ -178,14 +178,8 @@ body {
     margin-top:3%;
     padding: 2%;
     border-radius: 10%;
-   
-   
   }
-  @media (min-width: 768px) {
-    #contact {
-      width: 40%; /* Wider on larger screens */
-    }
-  }
+ 
 
   .projects-box {
     display: flex; /* Për të shfaqur projektet anash njëri-tjetrit */
@@ -195,25 +189,35 @@ body {
     /* Ngjyra e sfondit të kutisë */
   }
   
-  .project {
-    flex: 1; /* Projekti zgjat në mënyrë të barabartë */
+.project {
+    flex: 1; /* Projekti zgjat në mënyrë të barabarte */
     padding: 15px; /* Hapësira brenda secilës kuti projekti */
     border: 1px solid #ddd; /* Kufiri i secilës kuti projekti */
     border-radius: 8px; /* Këndet e rrumbullakosura për secilin projekt */
     background-color: #ce9ac9; /* Ngjyra e sfondit për secilin projekt */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hije për theksim */
-    text-align: center; /* Teksti në qendër */
+    text-align: center; /* Teksti në qender */
   }
   
-  .project h3 {
+.project h3 {
     margin-bottom: 10px; /* Hapësirë poshtë titullit */
   }
   
-  .project p {
+.project p {
     font-size: 14px; /* Madhësia e tekstit të përshkrimit */
     color: #555; /* Ngjyra e tekstit të përshkrimit */
   }
 #project div{
   padding-top: 20%;
 }
-  
+#Experience{
+  border: 1px solid;
+  background-color:#a99797;
+  border-width: 20%;
+  padding-top: 12%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 5%;
+  margin-top:3%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
